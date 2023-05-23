@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>User Form</h1>
+        <form class="lg-6">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name"  required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password"  required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address:</label>
+                <textarea class="form-control" id="address" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Select Game:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="game1" value="game1" required>
+                    <label class="form-check-label" for="game1">Game 1</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="game2" value="game2">
+                    <label class="form-check-label" for="game2">Game 2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="game3" value="game3">
+                    <label class="form-check-label" for="game3">Game 3</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Select Gender:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio"  id="male" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="female" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="other" value="other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Select Gender:</label>
+                <select class="form-select" id="age" >
+                  <option value="1">0-18</option>
+                  <option value="2">18-50</option>
+                  <option value="3">>50</option>
+                </select>
+              </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Choose File (Image):</label>
+                <input type="file" class="form-control-file" id="image" >
+            </div>
+            <div class="mb-3">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function openDropdown(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.classList.toggle("show");
+        }
+
+        
+    </script>
+</body>
+
+</html>
+
+<!-- Label class,for -->
+<!-- input class, type , id, value(*) -->
+
+<!-- type=text,password,radio,(textarea) -->
+<!-- class=> form-control and form-label (for-label then <div>form-check && form-check-label && form-check-input)
+     (form-label then <select>form-select<select> <option>,) , form-control-file-->
